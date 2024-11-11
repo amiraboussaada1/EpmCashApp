@@ -1,0 +1,54 @@
+{
+	"Caption": "$(L,Update_BusinessPartnerFilter_Detail)",
+	"DesignTimeTarget": {
+		"Service": "/EpmCacheApp/Services/MbtEpmDemo.service",
+		"EntitySet": "BusinessPartnerFilterSet",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"OnPress": "/EpmCacheApp/Actions/CloseModalPage_Cancel.action"
+			},
+			{
+				"Position": "Right",
+				"SystemItem": "Save",
+				"OnPress": "/EpmCacheApp/Actions/MbtEpmDemo/BusinessPartnerFilterSet/BusinessPartnerFilterSet_UpdateEntity.action"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "CountryFilter",
+							"_Name": "CountryFilter",
+							"Value": "{CountryFilter}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "FilterID",
+							"_Name": "FilterID",
+							"Value": "{FilterID}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "BusinessPartnerFilterSet_Edit",
+	"PrefersLargeCaption": true
+}

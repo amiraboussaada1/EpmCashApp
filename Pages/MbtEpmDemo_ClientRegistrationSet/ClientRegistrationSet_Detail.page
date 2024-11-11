@@ -1,0 +1,68 @@
+{
+	"Caption": "$(L,ClientRegistration_Detail)",
+	"DesignTimeTarget": {
+		"Service": "/EpmCacheApp/Services/MbtEpmDemo.service",
+		"EntitySet": "ClientRegistrationSet",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/EpmCacheApp/Actions/MbtEpmDemo/ClientRegistrationSet/NavToClientRegistrationSet_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit"
+			},
+			{
+				"OnPress": "/EpmCacheApp/Rules/MbtEpmDemo/ClientRegistrationSet/ClientRegistrationSet_DeleteConfirmation.js",
+				"Position": "Right",
+				"SystemItem": "Trash"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{ClientID}",
+						"Subhead": "{AuthorizedUser}",
+						"BodyText": "",
+						"Footnote": "",
+						"Description": "",
+						"StatusText": "",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": ""
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "AuthorizedUser",
+							"Value": "{AuthorizedUser}"
+						},
+						{
+							"KeyName": "ClientID",
+							"Value": "{ClientID}"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "ClientRegistrationSet_Detail",
+	"PrefersLargeCaption": true
+}

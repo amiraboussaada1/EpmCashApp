@@ -1,0 +1,12 @@
+{
+    "PopoverItems": [{
+            "Title": "Add SalesOrder",
+            "OnPress": "/EpmCacheApp/Actions/MbtEpmDemo/BusinessPartnerSet/NavToBusinessPartnerSet_CreateSalesOrder.action"
+        },
+        {
+            "Title": "Delete",
+            "OnPress": "/EpmCacheApp/Rules/MbtEpmDemo/BusinessPartnerSet/BusinessPartnerSet_DeleteConfirmation.js"
+        }
+    ],
+    "_Type": "Action.Type.PopoverMenu"
+}

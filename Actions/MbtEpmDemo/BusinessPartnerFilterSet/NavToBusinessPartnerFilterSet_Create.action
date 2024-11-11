@@ -1,0 +1,6 @@
+{
+    "ModalPageFullscreen": false,
+    "ModalPage": true,
+    "PageToOpen": "/EpmCacheApp/Pages/MbtEpmDemo_BusinessPartnerFilterSet/BusinessPartnerFilterSet_Create.page",
+    "_Type": "Action.Type.Navigation"
+}

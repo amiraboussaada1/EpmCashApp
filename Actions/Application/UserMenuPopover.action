@@ -1,0 +1,46 @@
+{
+    "PopoverItems": [{
+            "Enabled": true,
+            "Icon": "sap-icon://synchronize",
+            "OnPress": "/EpmCacheApp/Actions/MbtEpmDemo/Service/SyncStartedMessage.action",
+            "Title": "Sync Changes",
+            "Visible": "$(PLT,true,true,false)"
+        },
+        {
+            "Enabled": true,
+            "Icon": "sap-icon://headset",
+            "OnPress": "/EpmCacheApp/Actions/Application/NavToSupport.action",
+            "Title": "Support",
+            "Visible": true
+        },
+        {
+            "Enabled": true,
+            "Icon": "sap-icon://refresh",
+            "OnPress": "/EpmCacheApp/Actions/Application/AppUpdateProgressBanner.action",
+            "Title": "Check for Updates",
+            "Visible": "$(PLT,true,true,false)"
+        },
+        {
+            "Enabled": true,
+            "Icon": "sap-icon://hint",
+            "OnPress": "/EpmCacheApp/Actions/Application/NavToAbout.action",
+            "Title": "About",
+            "Visible": true
+        },
+        {
+            "Enabled": true,
+            "Icon": "sap-icon://reset",
+            "OnPress": "/EpmCacheApp/Actions/Application/ResetMessage.action",
+            "Title": "Reset",
+            "Visible": true
+        },
+        {
+            "Enabled": true,
+            "Icon": "sap-icon://log",
+            "OnPress": "/EpmCacheApp/Actions/Application/Logout.action",
+            "Title": "Logout",
+            "Visible": "/EpmCacheApp/Rules/Application/ClientIsMultiUserMode.js"
+        }
+    ],
+    "_Type": "Action.Type.PopoverMenu"
+}

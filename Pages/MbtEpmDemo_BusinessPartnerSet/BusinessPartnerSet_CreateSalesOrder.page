@@ -1,0 +1,145 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/EpmCacheApp/Actions/CloseModalPage_Cancel.action",
+				"Position": "Left",
+				"SystemItem": "Cancel"
+			},
+			{
+				"OnPress": "/EpmCacheApp/Actions/MbtEpmDemo/BusinessPartnerSet/BusinessPartnerSet_CreateSalesOrder.action",
+				"Position": "Right",
+				"SystemItem": "Save"
+			}
+		]
+	},
+	"Caption": "$(L,Create_SalesOrder)",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "BillingStatus",
+							"_Name": "BillingStatus",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BillingStatusDescription",
+							"_Name": "BillingStatusDescription",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BusinessPartnerID",
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": true,
+							"IsEditable": false,
+							"IsPickerDismissedOnSelection": true,
+							"IsSelectedSectionEnabled": true,
+							"PickerItems": {
+								"DisplayValue": "{BusinessPartnerID}",
+								"ReturnValue": "{BusinessPartnerID}",
+								"Target": {
+									"EntitySet": "BusinessPartnerSet",
+									"Service": "/EpmCacheApp/Services/MbtEpmDemo.service"
+								}
+							},
+							"_Name": "BusinessPartnerID",
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"Value": "{BusinessPartnerID}"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "ChangedAt",
+							"Caption": "ChangedAt",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "CreatedAt",
+							"Caption": "CreatedAt",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Caption": "CurrencyCode",
+							"_Name": "CurrencyCode",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "CustomerID",
+							"_Name": "CustomerID",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "CustomerName",
+							"_Name": "CustomerName",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "DeliveryStatus",
+							"_Name": "DeliveryStatus",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "DeliveryStatusDescription",
+							"_Name": "DeliveryStatusDescription",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "GrossAmount",
+							"KeyboardType": "Number",
+							"_Name": "GrossAmount",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "LifecycleStatus",
+							"_Name": "LifecycleStatus",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "LifecycleStatusDescription",
+							"_Name": "LifecycleStatusDescription",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "NetAmount",
+							"KeyboardType": "Number",
+							"_Name": "NetAmount",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Note",
+							"_Name": "Note",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "NoteLanguage",
+							"_Name": "NoteLanguage",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "SalesOrderID",
+							"KeyboardType": "Number",
+							"_Name": "SalesOrderID",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "TaxAmount",
+							"KeyboardType": "Number",
+							"_Name": "TaxAmount",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "BusinessPartnerSet_CreateSalesOrder",
+	"PrefersLargeCaption": true
+}

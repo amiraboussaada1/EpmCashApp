@@ -1,0 +1,145 @@
+{
+	"Caption": "$(L,BusinessPartner_Detail)",
+	"DesignTimeTarget": {
+		"Service": "/EpmCacheApp/Services/MbtEpmDemo.service",
+		"EntitySet": "BusinessPartnerSet",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/EpmCacheApp/Actions/MbtEpmDemo/BusinessPartnerSet/NavToBusinessPartnerSet_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit"
+			},
+			{
+				"OnPress": "/EpmCacheApp/Actions/MbtEpmDemo/BusinessPartnerSet/BusinessPartnerSet_DetailPopover.action",
+				"Position": "Right",
+				"Caption": "More"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{CompanyName}",
+						"Subhead": "{AddressType}",
+						"BodyText": "",
+						"Footnote": "{City}",
+						"Description": "{Building}",
+						"StatusText": "{Country}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{PostalCode}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "AddressType",
+							"Value": "{AddressType}"
+						},
+						{
+							"KeyName": "Building",
+							"Value": "{Building}"
+						},
+						{
+							"KeyName": "City",
+							"Value": "{City}"
+						},
+						{
+							"KeyName": "Country",
+							"Value": "{Country}"
+						},
+						{
+							"KeyName": "PostalCode",
+							"Value": "{PostalCode}"
+						},
+						{
+							"KeyName": "Street",
+							"Value": "{Street}"
+						},
+						{
+							"KeyName": "BusinessPartnerID",
+							"Value": "{BusinessPartnerID}"
+						},
+						{
+							"KeyName": "BusinessPartnerRole",
+							"Value": "{BusinessPartnerRole}"
+						},
+						{
+							"KeyName": "CompanyName",
+							"Value": "{CompanyName}"
+						},
+						{
+							"KeyName": "FaxNumber",
+							"Value": "{FaxNumber}"
+						},
+						{
+							"KeyName": "LegalForm",
+							"Value": "{LegalForm}"
+						},
+						{
+							"KeyName": "PhoneNumber",
+							"Value": "{PhoneNumber}"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				},
+				{
+					"Header": {
+						"Caption": "ToSalesOrders",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{BillingStatusDescription}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{CustomerName}",
+						"Footnote": "{BusinessPartnerID}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{ChangedAt}",
+						"Subhead": "{BillingStatus}",
+						"SubstatusText": "{CreatedAt}",
+						"OnPress": "/EpmCacheApp/Actions/MbtEpmDemo/SalesOrderSet/NavToSalesOrderSet_Detail.action"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/ToSalesOrders",
+						"Service": "/EpmCacheApp/Services/MbtEpmDemo.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"DataSubscriptions": [
+				"SalesOrderSet"
+			],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "BusinessPartnerSet_Detail",
+	"PrefersLargeCaption": true
+}

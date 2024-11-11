@@ -1,0 +1,74 @@
+{
+	"Caption": "$(L,BusinessPartnerSet)",
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/EpmCacheApp/Actions/MbtEpmDemo/BusinessPartnerSet/NavToBusinessPartnerSet_Create.action",
+				"Position": "Right",
+				"SystemItem": "Add"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Header": {
+						"UseTopPadding": false,
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{Building}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"OnPress": "/EpmCacheApp/Actions/MbtEpmDemo/BusinessPartnerSet/NavToBusinessPartnerSet_Detail.action",
+						"StatusImage": "",
+						"Title": "{CompanyName}",
+						"Footnote": "{City}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{Country}",
+						"Subhead": "{AddressType}",
+						"SubstatusText": "{PostalCode}"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Search": {
+						"Enabled": true,
+						"Placeholder": "Item Search",
+						"BarcodeScanner": true,
+						"Delay": 500,
+						"MinimumCharacterThreshold": 3
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": true,
+						"LoadingIndicatorText": "Loading more items, please wait..."
+					},
+					"Target": {
+						"EntitySet": "BusinessPartnerSet",
+						"Service": "/EpmCacheApp/Services/MbtEpmDemo.service",
+						"QueryOptions": ""
+					},
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"LoadingIndicator": {
+				"Enabled": true,
+				"Text": "Loading, please wait..."
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "BusinessPartnerSet_List",
+	"PrefersLargeCaption": true
+}

@@ -1,0 +1,114 @@
+{
+	"Caption": "$(L,Update_BusinessPartner_Detail)",
+	"DesignTimeTarget": {
+		"Service": "/EpmCacheApp/Services/MbtEpmDemo.service",
+		"EntitySet": "BusinessPartnerSet",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"OnPress": "/EpmCacheApp/Actions/CloseModalPage_Cancel.action"
+			},
+			{
+				"Position": "Right",
+				"SystemItem": "Save",
+				"OnPress": "/EpmCacheApp/Actions/MbtEpmDemo/BusinessPartnerSet/BusinessPartnerSet_UpdateEntity.action"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "AddressType",
+							"_Name": "AddressType",
+							"Value": "{AddressType}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Building",
+							"_Name": "Building",
+							"Value": "{Building}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "City",
+							"_Name": "City",
+							"Value": "{City}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Country",
+							"_Name": "Country",
+							"Value": "{Country}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "PostalCode",
+							"_Name": "PostalCode",
+							"Value": "{PostalCode}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Street",
+							"_Name": "Street",
+							"Value": "{Street}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BusinessPartnerID",
+							"_Name": "BusinessPartnerID",
+							"Value": "{BusinessPartnerID}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
+						},
+						{
+							"Caption": "BusinessPartnerRole",
+							"_Name": "BusinessPartnerRole",
+							"Value": "{BusinessPartnerRole}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "CompanyName",
+							"_Name": "CompanyName",
+							"Value": "{CompanyName}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "FaxNumber",
+							"_Name": "FaxNumber",
+							"Value": "{FaxNumber}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "LegalForm",
+							"_Name": "LegalForm",
+							"Value": "{LegalForm}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "PhoneNumber",
+							"_Name": "PhoneNumber",
+							"Value": "{PhoneNumber}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "BusinessPartnerSet_Edit",
+	"PrefersLargeCaption": true
+}

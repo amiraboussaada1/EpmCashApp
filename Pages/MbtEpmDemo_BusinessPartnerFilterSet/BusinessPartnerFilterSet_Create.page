@@ -1,0 +1,79 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "CountryPicker",
+							"IsVisible": true,
+							"Separator": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": true,
+							"Caption": "Choose Country for subscription",
+							"DataPaging": {
+								"ShowLoadingIndicator": false,
+								"PageSize": 50
+							},
+							"PickerPrompt": "Please select one single item",
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": true,
+							"AllowDefaultValueIfOneItem": false,
+							"IsEditable": true,
+							"PickerItems": [
+								"DE",
+								"GB",
+								"US"
+							]
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				}
+			],
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			}
+		}
+	],
+	"_Type": "Page",
+	"_Name": "BusinessPartnerFilterSet_Create",
+	"Caption": "$(L,Create_BusinessPartnerFilter_Detail)",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "",
+				"SystemItem": "Cancel",
+				"Position": "Left",
+				"IsIconCircular": false,
+				"OnPress": "/EpmCacheApp/Actions/CloseModalPage_Cancel.action"
+			},
+			{
+				"_Name": "ActionBarItem1",
+				"Caption": "",
+				"SystemItem": "Save",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"OnPress": "/EpmCacheApp/Actions/MbtEpmDemo/BusinessPartnerFilterSet/BusinessPartnerFilterSet_CreateEntity.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
+}

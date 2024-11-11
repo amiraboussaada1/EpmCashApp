@@ -1,0 +1,18 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "ClientRegistrationSet",
+        "Service": "/EpmCacheApp/Services/MbtEpmDemo.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "AuthorizedUser": "#Control:AuthorizedUser/#Value",
+        "ClientID": "#Control:ClientID/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/EpmCacheApp/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/EpmCacheApp/Actions/UpdateEntityFailureMessage.action"
+}

@@ -1,0 +1,27 @@
+{
+    "Service": "/EpmCacheApp/Services/MbtEpmDemo.service",
+    "DefiningRequests": [{
+            "Name": "BusinessPartnerFilterSet",
+            "Query": "BusinessPartnerFilterSet"
+        },
+        {
+            "Name": "BusinessPartnerSet",
+            "Query": "BusinessPartnerSet"
+        },
+        {
+            "Name": "ClientRegistrationSet",
+            "Query": "ClientRegistrationSet"
+        },
+        {
+            "Name": "SalesOrderSet",
+            "Query": "SalesOrderSet"
+        }
+    ],
+    "_Type": "Action.Type.ODataService.Initialize",
+    "ShowActivityIndicator": true,
+    "ActivityIndicatorText": "Downloading...",
+    "ActionResult": {
+        "_Name": "init"
+    },
+    "OnFailure": "/EpmCacheApp/Actions/MbtEpmDemo/Service/InitializeOfflineFailureMessage.action"
+}

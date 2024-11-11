@@ -1,0 +1,6 @@
+{
+    "ModalPageFullscreen": false,
+    "ModalPage": true,
+    "PageToOpen": "/EpmCacheApp/Pages/MbtEpmDemo_ClientRegistrationSet/ClientRegistrationSet_Edit.page",
+    "_Type": "Action.Type.Navigation"
+}

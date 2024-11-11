@@ -1,0 +1,54 @@
+{
+	"Caption": "$(L,Update_ClientRegistration_Detail)",
+	"DesignTimeTarget": {
+		"Service": "/EpmCacheApp/Services/MbtEpmDemo.service",
+		"EntitySet": "ClientRegistrationSet",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"OnPress": "/EpmCacheApp/Actions/CloseModalPage_Cancel.action"
+			},
+			{
+				"Position": "Right",
+				"SystemItem": "Save",
+				"OnPress": "/EpmCacheApp/Actions/MbtEpmDemo/ClientRegistrationSet/ClientRegistrationSet_UpdateEntity.action"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "AuthorizedUser",
+							"_Name": "AuthorizedUser",
+							"Value": "{AuthorizedUser}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "ClientID",
+							"_Name": "ClientID",
+							"Value": "{ClientID}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "ClientRegistrationSet_Edit",
+	"PrefersLargeCaption": true
+}

@@ -1,0 +1,10 @@
+{
+    "_Type": "Action.Type.OfflineOData.Close",
+    "Service": "/EpmCacheApp/Services/MbtEpmDemo.service",
+    "Force": true,
+    "ActionResult": {
+        "_Name": "close"
+    },
+    "OnSuccess": "/EpmCacheApp/Actions/MbtEpmDemo/Service/CloseOfflineSuccessMessage.action",
+    "OnFailure": "/EpmCacheApp/Actions/MbtEpmDemo/Service/CloseOfflineFailureMessage.action"
+}

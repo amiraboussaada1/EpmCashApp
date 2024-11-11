@@ -1,0 +1,132 @@
+{
+	"Caption": "$(L,SalesOrder_Detail)",
+	"DesignTimeTarget": {
+		"Service": "/EpmCacheApp/Services/MbtEpmDemo.service",
+		"EntitySet": "SalesOrderSet",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/EpmCacheApp/Actions/MbtEpmDemo/SalesOrderSet/NavToSalesOrderSet_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit"
+			},
+			{
+				"OnPress": "/EpmCacheApp/Rules/MbtEpmDemo/SalesOrderSet/SalesOrderSet_DeleteConfirmation.js",
+				"Position": "Right",
+				"SystemItem": "Trash"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{CustomerName}",
+						"Subhead": "{BillingStatus}",
+						"BodyText": "",
+						"Footnote": "{BusinessPartnerID}",
+						"Description": "{BillingStatusDescription}",
+						"StatusText": "{ChangedAt}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{CreatedAt}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "BillingStatus",
+							"Value": "{BillingStatus}"
+						},
+						{
+							"KeyName": "BillingStatusDescription",
+							"Value": "{BillingStatusDescription}"
+						},
+						{
+							"KeyName": "BusinessPartnerID",
+							"Value": "{BusinessPartnerID}"
+						},
+						{
+							"KeyName": "ChangedAt",
+							"Value": "{ChangedAt}"
+						},
+						{
+							"KeyName": "CreatedAt",
+							"Value": "{CreatedAt}"
+						},
+						{
+							"KeyName": "CurrencyCode",
+							"Value": "{CurrencyCode}"
+						},
+						{
+							"KeyName": "CustomerID",
+							"Value": "{CustomerID}"
+						},
+						{
+							"KeyName": "CustomerName",
+							"Value": "{CustomerName}"
+						},
+						{
+							"KeyName": "DeliveryStatus",
+							"Value": "{DeliveryStatus}"
+						},
+						{
+							"KeyName": "DeliveryStatusDescription",
+							"Value": "{DeliveryStatusDescription}"
+						},
+						{
+							"KeyName": "GrossAmount",
+							"Value": "{GrossAmount}"
+						},
+						{
+							"KeyName": "LifecycleStatus",
+							"Value": "{LifecycleStatus}"
+						},
+						{
+							"KeyName": "LifecycleStatusDescription",
+							"Value": "{LifecycleStatusDescription}"
+						},
+						{
+							"KeyName": "NetAmount",
+							"Value": "{NetAmount}"
+						},
+						{
+							"KeyName": "Note",
+							"Value": "{Note}"
+						},
+						{
+							"KeyName": "NoteLanguage",
+							"Value": "{NoteLanguage}"
+						},
+						{
+							"KeyName": "SalesOrderID",
+							"Value": "{SalesOrderID}"
+						},
+						{
+							"KeyName": "TaxAmount",
+							"Value": "{TaxAmount}"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "SalesOrderSet_Detail",
+	"PrefersLargeCaption": true
+}

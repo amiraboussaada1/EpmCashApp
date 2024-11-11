@@ -1,0 +1,18 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "BusinessPartnerFilterSet",
+        "Service": "/EpmCacheApp/Services/MbtEpmDemo.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "CountryFilter": "#Control:CountryFilter/#Value",
+        "FilterID": "#Control:FilterID/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/EpmCacheApp/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/EpmCacheApp/Actions/UpdateEntityFailureMessage.action"
+}

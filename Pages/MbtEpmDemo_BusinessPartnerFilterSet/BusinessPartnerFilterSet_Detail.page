@@ -1,0 +1,68 @@
+{
+	"Caption": "$(L,BusinessPartnerFilter_Detail)",
+	"DesignTimeTarget": {
+		"Service": "/EpmCacheApp/Services/MbtEpmDemo.service",
+		"EntitySet": "BusinessPartnerFilterSet",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/EpmCacheApp/Actions/MbtEpmDemo/BusinessPartnerFilterSet/NavToBusinessPartnerFilterSet_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit"
+			},
+			{
+				"OnPress": "/EpmCacheApp/Rules/MbtEpmDemo/BusinessPartnerFilterSet/BusinessPartnerFilterSet_DeleteConfirmation.js",
+				"Position": "Right",
+				"SystemItem": "Trash"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{FilterID}",
+						"Subhead": "{CountryFilter}",
+						"BodyText": "",
+						"Footnote": "",
+						"Description": "",
+						"StatusText": "",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": ""
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "CountryFilter",
+							"Value": "{CountryFilter}"
+						},
+						{
+							"KeyName": "FilterID",
+							"Value": "{FilterID}"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "BusinessPartnerFilterSet_Detail",
+	"PrefersLargeCaption": true
+}

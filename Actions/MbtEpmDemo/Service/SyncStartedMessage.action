@@ -1,0 +1,8 @@
+{
+    "Message": "Upload in progress...",
+    "CompletionMessage": "Sync completed",
+    "CompletionTimeout": 7,
+    "OnSuccess": "/EpmCacheApp/Actions/MbtEpmDemo/Service/UploadOffline.action",
+    "OnFailure": "/EpmCacheApp/Actions/MbtEpmDemo/Service/SyncFailureMessage.action",
+    "_Type": "Action.Type.ProgressBanner"
+}

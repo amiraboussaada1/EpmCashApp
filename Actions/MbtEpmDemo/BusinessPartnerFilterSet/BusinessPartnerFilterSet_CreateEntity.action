@@ -1,0 +1,16 @@
+{
+	"_Type": "Action.Type.ODataService.CreateEntity",
+	"ActionResult": {
+		"_Name": "create"
+	},
+	"OnFailure": "/EpmCacheApp/Actions/CreateEntityFailureMessage.action",
+	"OnSuccess": "/EpmCacheApp/Actions/CreateEntitySuccessMessage.action",
+	"Target": {
+		"EntitySet": "BusinessPartnerFilterSet",
+		"Service": "/EpmCacheApp/Services/MbtEpmDemo.service"
+	},
+	"Properties": {
+		"CountryFilter": "#Page:BusinessPartnerFilterSet_Create/#Control:CountryPicker/#SelectedValue",
+		"FilterID": "/EpmCacheApp/Rules/RandomInt64.js"
+	}
+}

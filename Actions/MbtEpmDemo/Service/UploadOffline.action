@@ -1,0 +1,9 @@
+{
+    "Service": "/EpmCacheApp/Services/MbtEpmDemo.service",
+    "_Type": "Action.Type.OfflineOData.Upload",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnSuccess": "/EpmCacheApp/Actions/MbtEpmDemo/Service/DownloadStartedMessage.action",
+    "OnFailure": "/EpmCacheApp/Actions/MbtEpmDemo/Service/SyncFailureMessage.action"
+}

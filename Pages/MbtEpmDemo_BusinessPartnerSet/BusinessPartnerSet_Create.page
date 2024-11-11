@@ -1,0 +1,96 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/EpmCacheApp/Actions/CloseModalPage_Cancel.action",
+				"Position": "Left",
+				"SystemItem": "Cancel"
+			},
+			{
+				"OnPress": "/EpmCacheApp/Actions/MbtEpmDemo/BusinessPartnerSet/BusinessPartnerSet_CreateEntity.action",
+				"Position": "Right",
+				"SystemItem": "Save"
+			}
+		]
+	},
+	"Caption": "$(L,Create_BusinessPartner_Detail)",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "AddressType",
+							"_Name": "AddressType",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Building",
+							"_Name": "Building",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "City",
+							"_Name": "City",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Country",
+							"_Name": "Country",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "PostalCode",
+							"_Name": "PostalCode",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Street",
+							"_Name": "Street",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BusinessPartnerID",
+							"KeyboardType": "Number",
+							"_Name": "BusinessPartnerID",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BusinessPartnerRole",
+							"_Name": "BusinessPartnerRole",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "CompanyName",
+							"_Name": "CompanyName",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "FaxNumber",
+							"_Name": "FaxNumber",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "LegalForm",
+							"_Name": "LegalForm",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "PhoneNumber",
+							"_Name": "PhoneNumber",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "BusinessPartnerSet_Create",
+	"PrefersLargeCaption": true
+}

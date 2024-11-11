@@ -1,0 +1,27 @@
+{
+    "CreateLinks": [],
+    "OnFailure": "/EpmCacheApp/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/EpmCacheApp/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "AddressType": "#Control:AddressType/#Value",
+        "Building": "#Control:Building/#Value",
+        "City": "#Control:City/#Value",
+        "Country": "#Control:Country/#Value",
+        "PostalCode": "#Control:PostalCode/#Value",
+        "Street": "#Control:Street/#Value",
+        "BusinessPartnerID": "#Control:BusinessPartnerID/#Value",
+        "BusinessPartnerRole": "#Control:BusinessPartnerRole/#Value",
+        "CompanyName": "#Control:CompanyName/#Value",
+        "FaxNumber": "#Control:FaxNumber/#Value",
+        "LegalForm": "#Control:LegalForm/#Value",
+        "PhoneNumber": "#Control:PhoneNumber/#Value"
+    },
+    "Target": {
+        "EntitySet": "BusinessPartnerSet",
+        "Service": "/EpmCacheApp/Services/MbtEpmDemo.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateEntity"
+}

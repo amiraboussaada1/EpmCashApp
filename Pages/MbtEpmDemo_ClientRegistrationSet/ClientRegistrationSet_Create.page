@@ -1,0 +1,46 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/EpmCacheApp/Actions/CloseModalPage_Cancel.action",
+				"Position": "Left",
+				"SystemItem": "Cancel"
+			},
+			{
+				"OnPress": "/EpmCacheApp/Actions/MbtEpmDemo/ClientRegistrationSet/ClientRegistrationSet_CreateEntity.action",
+				"Position": "Right",
+				"SystemItem": "Save"
+			}
+		]
+	},
+	"Caption": "$(L,Create_ClientRegistration_Detail)",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "AuthorizedUser",
+							"_Name": "AuthorizedUser",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "ClientID",
+							"KeyboardType": "Number",
+							"_Name": "ClientID",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "ClientRegistrationSet_Create",
+	"PrefersLargeCaption": true
+}

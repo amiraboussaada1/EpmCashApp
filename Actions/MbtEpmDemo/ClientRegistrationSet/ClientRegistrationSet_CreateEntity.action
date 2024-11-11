@@ -1,0 +1,18 @@
+{
+	"_Type": "Action.Type.ODataService.CreateEntity",
+	"ActionResult": {
+		"_Name": "create"
+	},
+	"OnFailure": "/EpmCacheApp/Actions/CreateEntityFailureMessage.action",
+	"OnSuccess": "/EpmCacheApp/Actions/CreateEntitySuccessMessage.action",
+	"Target": {
+		"Service": "/EpmCacheApp/Services/MbtEpmDemoOnline.service",
+		"EntitySet": "ClientRegistrationSet"
+	},
+	"Properties": {
+		"ClientID": "/EpmCacheApp/Rules/RandomInt64.js"
+	},
+	"Headers": {
+		"Client-Instance-ID": "/EpmCacheApp/Rules/GetOrGenerateClientInstanceId.js"
+	}
+}

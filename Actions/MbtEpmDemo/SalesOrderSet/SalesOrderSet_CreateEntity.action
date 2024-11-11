@@ -1,0 +1,33 @@
+{
+    "CreateLinks": [],
+    "OnFailure": "/EpmCacheApp/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/EpmCacheApp/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "BillingStatus": "#Control:BillingStatus/#Value",
+        "BillingStatusDescription": "#Control:BillingStatusDescription/#Value",
+        "BusinessPartnerID": "#Control:BusinessPartnerID/#SelectedValue",
+        "ChangedAt": "#Control:ChangedAt/#Value",
+        "CreatedAt": "#Control:CreatedAt/#Value",
+        "CurrencyCode": "#Control:CurrencyCode/#Value",
+        "CustomerID": "#Control:CustomerID/#Value",
+        "CustomerName": "#Control:CustomerName/#Value",
+        "DeliveryStatus": "#Control:DeliveryStatus/#Value",
+        "DeliveryStatusDescription": "#Control:DeliveryStatusDescription/#Value",
+        "GrossAmount": "#Control:GrossAmount/#Value",
+        "LifecycleStatus": "#Control:LifecycleStatus/#Value",
+        "LifecycleStatusDescription": "#Control:LifecycleStatusDescription/#Value",
+        "NetAmount": "#Control:NetAmount/#Value",
+        "Note": "#Control:Note/#Value",
+        "NoteLanguage": "#Control:NoteLanguage/#Value",
+        "SalesOrderID": "#Control:SalesOrderID/#Value",
+        "TaxAmount": "#Control:TaxAmount/#Value"
+    },
+    "Target": {
+        "EntitySet": "SalesOrderSet",
+        "Service": "/EpmCacheApp/Services/MbtEpmDemo.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateEntity"
+}

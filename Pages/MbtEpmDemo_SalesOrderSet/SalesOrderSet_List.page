@@ -1,0 +1,74 @@
+{
+	"Caption": "$(L,SalesOrderSet)",
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/EpmCacheApp/Actions/MbtEpmDemo/SalesOrderSet/NavToSalesOrderSet_Create.action",
+				"Position": "Right",
+				"SystemItem": "Add"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Header": {
+						"UseTopPadding": false,
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{BillingStatusDescription}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"OnPress": "/EpmCacheApp/Actions/MbtEpmDemo/SalesOrderSet/NavToSalesOrderSet_Detail.action",
+						"StatusImage": "",
+						"Title": "{CustomerName}",
+						"Footnote": "{BusinessPartnerID}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{ChangedAt}",
+						"Subhead": "{BillingStatus}",
+						"SubstatusText": "{CreatedAt}"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Search": {
+						"Enabled": true,
+						"Placeholder": "Item Search",
+						"BarcodeScanner": true,
+						"Delay": 500,
+						"MinimumCharacterThreshold": 3
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": true,
+						"LoadingIndicatorText": "Loading more items, please wait..."
+					},
+					"Target": {
+						"EntitySet": "SalesOrderSet",
+						"Service": "/EpmCacheApp/Services/MbtEpmDemo.service",
+						"QueryOptions": ""
+					},
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"LoadingIndicator": {
+				"Enabled": true,
+				"Text": "Loading, please wait..."
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "SalesOrderSet_List",
+	"PrefersLargeCaption": true
+}

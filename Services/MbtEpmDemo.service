@@ -1,0 +1,8 @@
+{
+	"DestinationName": "MbtEpmDemo",
+	"Headers": {
+		"Client-Instance-ID\t": "/EpmCacheApp/Rules/GetOrGenerateClientInstanceId.js"
+	},
+	"OfflineEnabled": true,
+	"SourceType": "Mobile"
+}

@@ -1,0 +1,8 @@
+{
+    "_Type": "Action.Type.ApplicationUpdate",
+    "ActionResult": {
+        "_Name": "AppUpdate"
+    },
+    "OnFailure": "/EpmCacheApp/Rules/Application/AppUpdateFailure.js",
+    "OnSuccess": "/EpmCacheApp/Rules/Application/AppUpdateSuccess.js"
+}

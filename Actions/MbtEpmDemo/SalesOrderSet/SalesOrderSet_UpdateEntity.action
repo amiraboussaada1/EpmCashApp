@@ -1,0 +1,34 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "SalesOrderSet",
+        "Service": "/EpmCacheApp/Services/MbtEpmDemo.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "BillingStatus": "#Control:BillingStatus/#Value",
+        "BillingStatusDescription": "#Control:BillingStatusDescription/#Value",
+        "BusinessPartnerID": "#Control:BusinessPartnerID/#SelectedValue",
+        "ChangedAt": "#Control:ChangedAt/#Value",
+        "CreatedAt": "#Control:CreatedAt/#Value",
+        "CurrencyCode": "#Control:CurrencyCode/#Value",
+        "CustomerID": "#Control:CustomerID/#Value",
+        "CustomerName": "#Control:CustomerName/#Value",
+        "DeliveryStatus": "#Control:DeliveryStatus/#Value",
+        "DeliveryStatusDescription": "#Control:DeliveryStatusDescription/#Value",
+        "GrossAmount": "#Control:GrossAmount/#Value",
+        "LifecycleStatus": "#Control:LifecycleStatus/#Value",
+        "LifecycleStatusDescription": "#Control:LifecycleStatusDescription/#Value",
+        "NetAmount": "#Control:NetAmount/#Value",
+        "Note": "#Control:Note/#Value",
+        "NoteLanguage": "#Control:NoteLanguage/#Value",
+        "SalesOrderID": "#Control:SalesOrderID/#Value",
+        "TaxAmount": "#Control:TaxAmount/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/EpmCacheApp/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/EpmCacheApp/Actions/UpdateEntityFailureMessage.action"
+}

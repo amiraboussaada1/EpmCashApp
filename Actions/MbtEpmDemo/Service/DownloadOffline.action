@@ -1,0 +1,26 @@
+{
+    "Service": "/EpmCacheApp/Services/MbtEpmDemo.service",
+    "DefiningRequests": [{
+            "Name": "BusinessPartnerFilterSet",
+            "Query": "BusinessPartnerFilterSet"
+        },
+        {
+            "Name": "BusinessPartnerSet",
+            "Query": "BusinessPartnerSet"
+        },
+        {
+            "Name": "ClientRegistrationSet",
+            "Query": "ClientRegistrationSet"
+        },
+        {
+            "Name": "SalesOrderSet",
+            "Query": "SalesOrderSet"
+        }
+    ],
+    "_Type": "Action.Type.OfflineOData.Download",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnFailure": "/EpmCacheApp/Actions/MbtEpmDemo/Service/SyncFailureMessage.action",
+    "OnSuccess": "/EpmCacheApp/Rules/MbtEpmDemo/ErrorArchive_CheckForSyncError.js"
+}

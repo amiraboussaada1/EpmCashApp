@@ -1,0 +1,167 @@
+{
+	"Caption": "$(L,Update_SalesOrder_Detail)",
+	"DesignTimeTarget": {
+		"Service": "/EpmCacheApp/Services/MbtEpmDemo.service",
+		"EntitySet": "SalesOrderSet",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"OnPress": "/EpmCacheApp/Actions/CloseModalPage_Cancel.action"
+			},
+			{
+				"Position": "Right",
+				"SystemItem": "Save",
+				"OnPress": "/EpmCacheApp/Actions/MbtEpmDemo/SalesOrderSet/SalesOrderSet_UpdateEntity.action"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "BillingStatus",
+							"_Name": "BillingStatus",
+							"Value": "{BillingStatus}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BillingStatusDescription",
+							"_Name": "BillingStatusDescription",
+							"Value": "{BillingStatusDescription}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BusinessPartnerID",
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": true,
+							"IsPickerDismissedOnSelection": true,
+							"IsSelectedSectionEnabled": true,
+							"PickerItems": {
+								"DisplayValue": "{BusinessPartnerID}",
+								"ReturnValue": "{BusinessPartnerID}",
+								"Target": {
+									"EntitySet": "BusinessPartnerSet",
+									"Service": "/EpmCacheApp/Services/MbtEpmDemo.service"
+								}
+							},
+							"Value": "{BusinessPartnerID}",
+							"_Name": "BusinessPartnerID",
+							"_Type": "Control.Type.FormCell.ListPicker"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "ChangedAt",
+							"Value": "{ChangedAt}",
+							"Caption": "ChangedAt",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "CreatedAt",
+							"Value": "{CreatedAt}",
+							"Caption": "CreatedAt",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Caption": "CurrencyCode",
+							"_Name": "CurrencyCode",
+							"Value": "{CurrencyCode}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "CustomerID",
+							"_Name": "CustomerID",
+							"Value": "{CustomerID}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "CustomerName",
+							"_Name": "CustomerName",
+							"Value": "{CustomerName}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "DeliveryStatus",
+							"_Name": "DeliveryStatus",
+							"Value": "{DeliveryStatus}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "DeliveryStatusDescription",
+							"_Name": "DeliveryStatusDescription",
+							"Value": "{DeliveryStatusDescription}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "GrossAmount",
+							"_Name": "GrossAmount",
+							"Value": "{GrossAmount}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "LifecycleStatus",
+							"_Name": "LifecycleStatus",
+							"Value": "{LifecycleStatus}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "LifecycleStatusDescription",
+							"_Name": "LifecycleStatusDescription",
+							"Value": "{LifecycleStatusDescription}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "NetAmount",
+							"_Name": "NetAmount",
+							"Value": "{NetAmount}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Note",
+							"_Name": "Note",
+							"Value": "{Note}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "NoteLanguage",
+							"_Name": "NoteLanguage",
+							"Value": "{NoteLanguage}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "SalesOrderID",
+							"_Name": "SalesOrderID",
+							"Value": "{SalesOrderID}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
+						},
+						{
+							"Caption": "TaxAmount",
+							"_Name": "TaxAmount",
+							"Value": "{TaxAmount}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "SalesOrderSet_Edit",
+	"PrefersLargeCaption": true
+}

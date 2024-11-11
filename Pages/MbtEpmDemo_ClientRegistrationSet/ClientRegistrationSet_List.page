@@ -1,0 +1,74 @@
+{
+	"Caption": "$(L,ClientRegistrationSet)",
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/EpmCacheApp/Actions/MbtEpmDemo/ClientRegistrationSet/NavToClientRegistrationSet_Create.action",
+				"Position": "Right",
+				"SystemItem": "Add"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Header": {
+						"UseTopPadding": false,
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"OnPress": "/EpmCacheApp/Actions/MbtEpmDemo/ClientRegistrationSet/NavToClientRegistrationSet_Detail.action",
+						"StatusImage": "",
+						"Title": "{ClientID}",
+						"Footnote": "",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "",
+						"Subhead": "{AuthorizedUser}",
+						"SubstatusText": ""
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Search": {
+						"Enabled": true,
+						"Placeholder": "Item Search",
+						"BarcodeScanner": true,
+						"Delay": 500,
+						"MinimumCharacterThreshold": 3
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": true,
+						"LoadingIndicatorText": "Loading more items, please wait..."
+					},
+					"Target": {
+						"EntitySet": "ClientRegistrationSet",
+						"Service": "/EpmCacheApp/Services/MbtEpmDemo.service",
+						"QueryOptions": ""
+					},
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"LoadingIndicator": {
+				"Enabled": true,
+				"Text": "Loading, please wait..."
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "ClientRegistrationSet_List",
+	"PrefersLargeCaption": true
+}
